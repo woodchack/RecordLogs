@@ -9,6 +9,7 @@
 #include <clocale>
 #include <ctime>
 #include <fstream>
+#include <thread>
 
 // Define export/import macro
 #ifdef _LIBRARY_BUILD

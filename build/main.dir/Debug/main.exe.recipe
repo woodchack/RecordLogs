@@ -2,13 +2,13 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\IT\Project\build\x64\Debug\ZERO_CHECK</FullPath>
+      <FullPath>C:\IT\RecordLogs\build\x64\Debug\ZERO_CHECK</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\IT\Project\build\Debug\lib.dll</FullPath>
+      <FullPath>C:\IT\RecordLogs\build\Debug\lib.dll</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\IT\Project\build\Debug\main.exe</FullPath>
+      <FullPath>C:\IT\RecordLogs\build\Debug\main.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

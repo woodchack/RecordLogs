@@ -1,6 +1,6 @@
-^C:\IT\PROJECT\BUILD\CMAKEFILES\FA1EC987C08B9A20053A383C49EF8D1D\GENERATE.STAMP.RULE
+^C:\IT\RECORDLOGS\BUILD\CMAKEFILES\A32DD11F50A88F42CCBA52B9758CEC9B\GENERATE.STAMP.RULE
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/IT/Project -BC:/IT/Project/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/IT/Project/build/infotecs.sln
+C:\IT\cmake\bin\cmake.exe -SC:/IT/RecordLogs -BC:/IT/RecordLogs/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/IT/RecordLogs/build/infotecs.sln
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

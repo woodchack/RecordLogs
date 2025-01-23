@@ -15,15 +15,38 @@ Lib::Lib(std::string fileName, ILEVEL defaultILevel) :
 	}
 	std::string text;
 
-	do
-	{
-		text = Lib::Log(text);
-		if (text != "exit")
-		{
-			File << text << "\t" << Lib::getStringLevel(Lib::defaultILevel) << "\t" << Lib::getTime() << std::endl;
+	std::cout << "To set Important level enter: set(ILEVEL), for example: set MEDIUM" << std::endl;
+
+	std::cout << "Enter messages: \n";
+
+	do {
+
+		std::getline(std::cin, text); 
+
+		bool shouldWriteToFile = true;
+
+		if (text == "set MEDIUM") {
+			setDefultLevel(ILEVEL::MEDIUM);
+			shouldWriteToFile = false; 
 		}
-	} while (text!="exit");
-	
+		else if (text == "set LOW") {
+			setDefultLevel(ILEVEL::LOW);
+			shouldWriteToFile = false; 
+		}
+		else if (text == "set HIGH") {
+			setDefultLevel(ILEVEL::HIGH);
+			shouldWriteToFile = false; 
+		}
+
+		if (shouldWriteToFile) {
+			if (Lib::defaultILevel != ILEVEL::LOW) {
+				if (text != "exit") {
+					File << text << "\t" << Lib::getStringLevel(Lib::defaultILevel) << "\t" << Lib::getTime() << std::endl;
+				}
+			}
+		}
+	} while (text != "exit");
+
 	File.close();
 }
 
@@ -37,7 +60,6 @@ void Lib::setILevel(ILEVEL level)
 std::string Lib::Log(std::string text)
 {
 	
-	std::cout << "Enter message \t";
 	std::cin >> text;
 	return text;
 }
