@@ -1,0 +1,10 @@
+^C:\IT\PROJECT\BUILD\CMAKEFILES\FA1EC987C08B9A20053A383C49EF8D1D\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/IT/Project -BC:/IT/Project/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/IT/Project/build/infotecs.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
